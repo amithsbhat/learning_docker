@@ -1,0 +1,77 @@
+PS C:\Users\bhata> docker build . -t python-imdb
+[+] Building 0.1s (2/2) FINISHED
+ => [internal] load build definition from Dockerfile                                                                                                                                   0.1s
+ => => transferring dockerfile: 2B                                                                                                                                                     0.0s 
+ => [internal] load .dockerignore                                                                                                                                                      0.1s 
+ => => transferring context: 2B                                                                                                                                                        0.0s 
+failed to solve with frontend dockerfile.v0: failed to read dockerfile: open /var/lib/docker/tmp/buildkit-mount2881831285/Dockerfile: no such file or directory
+PS C:\Users\bhata> docker build . -t python-imdb
+[+] Building 0.0s (1/2)
+ => [internal] load build definition from Dockerfile                                                                                                                                   0.0s
+ => => transferring dockerfile: 2B                                                                                                                                                     0.0s 
+failed to solve with frontend dockerfile.v0: failed to read dockerfile: open /var/lib/docker/tmp/buildkit-mount3055390723/Dockerfile: no such file or directory
+PS C:\Users\bhata> docker build . -t python-imdb .
+"docker build" requires exactly 1 argument.
+See 'docker build --help'.
+
+Usage:  docker build [OPTIONS] PATH | URL | -
+
+Build an image from a Dockerfile
+PS C:\Users\bhata> docker build  -t python-imdb . 
+[+] Building 0.0s (1/2)
+ => [internal] load build definition from Dockerfile                                                                                                                                   0.0s
+ => => transferring dockerfile: 2B                                                                                                                                                     0.0s 
+failed to solve with frontend dockerfile.v0: failed to read dockerfile: open /var/lib/docker/tmp/buildkit-mount2079144057/Dockerfile: no such file or directory
+PS C:\Users\bhata> cd C:\Users\bhata\Home\AlgoDSPractice\docker_py
+PS C:\Users\bhata\Home\AlgoDSPractice\docker_py> docker build . -t python-imdb  
+[+] Building 135.8s (8/8) FINISHED
+ => [internal] load build definition from Dockerfile                                                                                                                                   0.0s
+ => => transferring dockerfile: 174B                                                                                                                                                   0.0s 
+ => [internal] load .dockerignore                                                                                                                                                      0.0s 
+ => => transferring context: 2B                                                                                                                                                        0.0s 
+ => [internal] load metadata for docker.io/library/python:3.9                                                                                                                          3.1s 
+ => [internal] load build context                                                                                                                                                      0.1s
+ => => transferring context: 1.35kB                                                                                                                                                    0.0s 
+ => [1/3] FROM docker.io/library/python:3.9@sha256:929da7c4e1285e844e70e901267059f63ea958778695a867111a77eaf09700ff                                                                  126.0s 
+ => => resolve docker.io/library/python:3.9@sha256:929da7c4e1285e844e70e901267059f63ea958778695a867111a77eaf09700ff                                                                    0.1s 
+ => => sha256:929da7c4e1285e844e70e901267059f63ea958778695a867111a77eaf09700ff 1.86kB / 1.86kB                                                                                         0.0s
+ => => sha256:5c8cfbf51e6e6869f1af2a1e7067b07fd6733036a333c9d29f743b0285e26037 5.16MB / 5.16MB                                                                                        10.4s 
+ => => sha256:f2f58072e9ed1aa1b0143341c5ee83815c00ce47548309fa240155067ab0e698 55.04MB / 55.04MB                                                                                      56.0s 
+ => => sha256:aa3a609d15798d35c1484072876b7d22a316e98de6a097de33b9dade6a689cd1 10.88MB / 10.88MB                                                                                      10.0s 
+ => => sha256:e9c9630a11241d1f4ff674e67f4813466d4078dc875f8e7a11d285ae24c19f68 2.22kB / 2.22kB                                                                                         0.0s 
+ => => writing image sha256:ddb93622afb47a2c2450c7adba181babf486079b94d6c6003cdbfb51b029e8c3                                                                                           0.0s
+ => => naming to docker.io/library/python-imdb                                                                                                                                         0.0s
+
+Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
+PS C:\Users\bhata\Home\AlgoDSPractice\docker_py> docker run python-imdb
+The Dark Knight (2008), Rating: 9.0, Starring: Christopher Nolan (dir.), Christian Bale, Heath Ledger
+PS C:\Users\bhata\Home\AlgoDSPractice\docker_py> docker run python-imdb
+City Lights (1931), Rating: 8.4, Starring: Charles Chaplin (dir.), Charles Chaplin, Virginia Cherrill
+PS C:\Users\bhata\Home\AlgoDSPractice\docker_py> docker run python-imdb
+Aliens (1986), Rating: 8.3, Starring: James Cameron (dir.), Sigourney Weaver, Michael Biehn
+PS C:\Users\bhata\Home\AlgoDSPractice\docker_py>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
